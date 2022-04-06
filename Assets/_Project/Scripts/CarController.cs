@@ -32,11 +32,8 @@ public class CarController : MonoBehaviour
     }
     void CarfuelConsumption()
     {
-        if (fuel > 0)
-        {
-            fuel -= fuelConsumption * Time.fixedDeltaTime;
-            image.fillAmount = fuel;
-        }
+        fuel -= fuelConsumption * Mathf.Abs(movement) * Time.fixedDeltaTime;
+        image.fillAmount = fuel;
     }
 
 }
