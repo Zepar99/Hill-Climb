@@ -49,4 +49,8 @@ public class GamePause : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
