@@ -497,7 +497,6 @@ GameObject:
   - component: {fileID: 7751546660839336610}
   - component: {fileID: 7751546660839336609}
   - component: {fileID: 7751546660839336611}
-  - component: {fileID: 7751546660839336636}
   - component: {fileID: 5877526140599214386}
   - component: {fileID: 411769088131897247}
   m_Layer: 8
@@ -621,23 +620,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.18687224, y: 0.5067612}
   m_EdgeRadius: 0
---- !u!114 &7751546660839336636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7751546660839336613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 13fdfdd9793def74881179d6196ba56b, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 0
 --- !u!114 &5877526140599214386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -652,6 +634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkpoint: {fileID: 0}
   distanceText: {fileID: 0}
+  slider: {fileID: 0}
 --- !u!114 &411769088131897247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -842,3 +825,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameoverUI: {fileID: 0}
+  player: {fileID: 0}
+  car: {fileID: 0}

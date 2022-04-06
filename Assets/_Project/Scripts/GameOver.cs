@@ -5,6 +5,7 @@ public class GameOver : MonoBehaviour
 {
     public static bool GameIsOver = false;
     [SerializeField] private GameObject GameoverUI;
+
     [SerializeField] private GameObject player;
     public CarController car;
 
