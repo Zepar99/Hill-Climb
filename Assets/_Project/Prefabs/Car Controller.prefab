@@ -501,7 +501,7 @@ GameObject:
   - component: {fileID: 411769088131897247}
   m_Layer: 8
   m_Name: Car Controller
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
