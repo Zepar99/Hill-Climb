@@ -12,6 +12,7 @@ public class CarController : MonoBehaviour
     [SerializeField] private Rigidbody2D carBody;
     [SerializeField] private UnityEngine.UI.Image image;
     private float movement;
+    public AudioSource audioSource;
     public float fuel = 1f;
 
     void FixedUpdate()
@@ -36,4 +37,16 @@ public class CarController : MonoBehaviour
         image.fillAmount = fuel;
     }
 
+    void audiosound()
+    {
+        if (movement != 0)
+        {
+            audioSource.Play();
+        }
+        else
+        {
+            audioSource.Stop();
+        }
+
+    }
 }

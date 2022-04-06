@@ -818,14 +818,14 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cd402240855b3e44babf1823c11bd3b1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
+  m_Volume: 0.5
+  m_Pitch: 0.8
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 1.72
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
@@ -1110,6 +1110,10 @@ PrefabInstance:
       propertyPath: frontTire
       value: 
       objectReference: {fileID: 499539657}
+    - target: {fileID: 411769088131897247, guid: 629f56de5547d9747976634c212b4553, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5877526140599214386, guid: 629f56de5547d9747976634c212b4553, type: 3}
       propertyPath: slider
       value: 
