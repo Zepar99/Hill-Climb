@@ -5,13 +5,25 @@ public class GameOver : MonoBehaviour
 {
     public static bool GameIsOver = false;
     [SerializeField] private GameObject GameoverUI;
-    private CarController car;
+
+    [SerializeField] private GameObject player;
+    public CarController car;
 
 
+    void update()
+    {
+        if (car != null)
+        {
+            Debug.Log(car.fuel);
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Ground"))
+
+        if (collision.CompareTag("Ground") || car.fuel <= 0)
         {
+            GameIsOver = true;
+            GameoverUI.SetActive(true);
             gameOver();
         }
     }
@@ -22,14 +34,14 @@ public class GameOver : MonoBehaviour
         GameoverUI.SetActive(true);
         Time.timeScale = 0f;
     }
-    private void Restart()
+    public void Restart()
     {
         GameIsOver = false;
         GameoverUI.SetActive(false);
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-    private void Quit()
+    public void Quit()
     {
         Application.Quit();
     }
