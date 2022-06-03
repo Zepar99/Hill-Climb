@@ -1,13 +1,19 @@
 # Hill-Climb
+This is a clone of hill climb racing game in this game you have to reach to the end point of the level.
 
 # Play this Game on
 [https://pratikborse.itch.io/](https://pratikborse.itch.io/)
 
 # Features
+- Used wheel joint for making the vehical physics.
+- used Hinge joint for player body physics.
+- Implemented the fuel sysytem using UI and scripting.
+- Implemented Distance Calculation code ad its UI.
+- Design Pattern used
+    - **Singleton**
+
 
 # GamePlay Screenshots and Gifs
-
-
 
 <p><img align ="center" alt = "gif" src="https://github.com/Zepar99/Hill-Climb/blob/main/Hill_Climb_Racing_Clone__by_Pratik_K__Borse_-_Google_Chrome_2022-06-03_10-38-56_AdobeCreativeCloudExpress.gif" width="1080" height="600" /></p>
 
